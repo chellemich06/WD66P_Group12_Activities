@@ -1,9 +1,40 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Activity 6</title>
+<html lang="en">
 
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Lalin MNL | Login</title>
 </head>
+
+<body>
+
+    <div class="box">
+        <div class="container">
+            <div class="top-header">
+                <span>Welcome to Lalin MNL</span>
+                <header> Account Login</header>
+            </div> <br />
+            <form action="backend.php" method="POST">
+                <div class="mb-3">
+                    <label for="emailAddress" class="form-label">Email address</label><br />
+                    <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div> <br />
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label><br />
+                    <input type="password" class="form-control" id="Password">
+                </div> <br />
+
+                <div class="left">
+                    <label><a href="#">Register your account</a></label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+
+
+</body>
 
 
 </html>
