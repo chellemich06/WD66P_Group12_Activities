@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lalin MNL | Login</title>
+    <link rel="icon" href="/img/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="/bootstrap-5.3.0/js/jscript.js"></script>
+   <!--<link rel="stylesheet" type="text/css" href="bootstrap-5.3.0/css/bootstrap.css" />-->
+</head>
+
+<body>
+
+    <!--<form action="backend.php" method="POST">
+        <div class="loginBox">
+                <span><h3>Welcome to Lalin MNL</h3></span>
+                <header>Account Login</header>
+            
+                <div class="mb-3">
+                    <label for="emailAddress" class="form-label">Email address</label><br>
+                    <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div> <br>
+
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label><br>
+                    <input type="password" class="form-control" id="Password">
+                </div> <br>
+
+                <div class="left">
+                    <label><a href="#">Register your account</a></label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Login</button>
+
+                
+        </div>        
+    </form>
+-->
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <!-- Icon -->
+      <form>
+      <h1>Welcome to Lalin MNL</h1>
+      <div class="fadeIn first">
+        <img src="/img/lalin-logo.png" id="icon" alt="User Icon" />
+        <h3>Account Login</h3>
+        <div class="alert warning" id="empty" hidden>
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+             <a>Please input email and password.</a>
+          </div>
+        <div class="alert danger" id="incorrect" hidden>
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+             <a>Wrong Email and password.</a>
+          </div>
+        <div class="alert success" id="correct" hidden>
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+             <a>Successfully Login.</a>
+          </div>
+      </div>
+     
+  
+      <!-- Login Form -->
+      
+        <input type="text" id="email" class="fadeIn second" name="email" placeholder="Email Adress">
+        <input type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
+        <input type="button" class="fadeIn fourth" value="Log In" onclick="myFunction()">
+      </form>
+      <!--<script>
+        function myFunction() {
+          var x = document.getElementById("empty");
+          var y = document.getElementById("incorrect");
+          var z = document.getElementById("correct");
+
+          var e = document.getElementById("email").value;
+          var p = document.getElementById("password").value;
+
+          if (e == "admin" && p == "12345") {
+            x.style.display = "none";
+            z.style.display = "block";
+            y.style.display = "none";
+            document.getElementById("email").value = "";
+            document.getElementById("password").value = "";
+          } else if(e == "" && p == ""){
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.display = "none";
+            document.getElementById("email").value = "";
+            document.getElementById("password").value = "";
+          } else if(e != "admin" && p != "12345"){
+            x.style.display = "none";
+            y.style.display = "block";
+            z.style.display = "none";
+            document.getElementById("email").value = "";
+            document.getElementById("password").value = "";
+          } return false;
+            
+          
+        }
+        </script>
+    -->
+  
+      <!-- Remind Passowrd -->
+      <div id="formFooter">
+        <a class="underlineHover" href="#">Register your account</a>
+      </div>
+  
+    </div>
+  </div>
+        
+
+</body>
+
+
+</html>
